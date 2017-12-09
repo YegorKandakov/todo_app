@@ -120,3 +120,19 @@ ul.todo li .buttons button:last-of-type::before {
   top: 10px;
   left: 0;
 }
+
+ul.todo#done:not(:empty) {
+  position: relative;
+  padding: 50px 0 0 0;
+}
+
+ul.todo#done:not(:empty):before {
+  content: '';
+  width: 150px;
+  height: 1px;
+  background: #a7aeba;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  margin: 0 0 0 -75px;
+}
